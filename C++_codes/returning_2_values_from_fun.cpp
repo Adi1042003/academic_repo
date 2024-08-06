@@ -43,6 +43,20 @@ vector<string> type5(void) // method 5 by using vector
     return { str1, str2 };
 }
 
+
+struct returnval
+{
+    string s1;
+    string s2;
+};
+
+returnval type6(void) // method 5 by using vector
+{
+    string str1 = "hello";
+    string str2 = "world";
+    return { str1, str2 };
+}
+
 int main()
 {
     // method 1
@@ -69,6 +83,10 @@ int main()
     s1 = vec[0];
     s2 = vec[1];
     cout << "this is type5 = " << s1 << " " << s2 << endl;
+
+    // method 6
+    auto values = type6();
+    cout << "this is type6 = " << type6().s1 << " " << values.s2<< endl;
 
     return 0;
 }
