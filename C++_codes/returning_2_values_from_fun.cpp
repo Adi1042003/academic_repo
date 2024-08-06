@@ -43,14 +43,14 @@ vector<string> type5(void) // method 5 by using vector
     return { str1, str2 };
 }
 
-
+// method 6 by using struct or class
 struct returnval
 {
     string s1;
     string s2;
 };
 
-returnval type6(void) // method 5 by using vector
+returnval type6(void) // method 6 by using struct or class
 {
     string str1 = "hello";
     string str2 = "world";
